@@ -5,7 +5,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: [self-hosted, build ]
+    runs-on: ubuntu-latest
 
     steps:
       - run: echo "If you see this message, Congrats"
