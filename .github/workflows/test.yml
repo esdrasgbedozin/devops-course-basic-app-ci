@@ -17,5 +17,5 @@ jobs:
       - name: Build App
         run: pip install -r requirements.txt
       - name: Install lint
-        run: npm run lint-content
+        run: python -m flake8 --max-line-length=120 --extend-ignore=F401 src/__init__.py
       - run: echo "If you see this message, Congrats"
